@@ -1,0 +1,28 @@
+html, body {
+	margin:0;
+	overflow: hidden;
+}
+	
+.brush, .eraser {
+	background-image: url('icons.png');
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 40px;
+	position: fixed;
+	top: 10px;
+	z-index: 5;
+	width: 40px;
+}
+.brush.active, .eraser.active,
+.brush:hover, .eraser:hover {
+	background-color: #b3e7a0;
+}
+.brush {
+	background-position: 0px 0px;
+	right: 60px;
+}
+.eraser {
+	background-position: 0 -40px;
+	right: 10px;
+}
